@@ -13,7 +13,6 @@ const Stopwatch = () => {
   const stop = ()=>{
     clearInterval(timer.current)
     timer.current = null;
-    // setCounter(0);
   }
   const reset = ()=>{
     clearInterval(timer.current);
