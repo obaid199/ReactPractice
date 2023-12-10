@@ -3,18 +3,22 @@ const Stopwatch = () => {
   const [counter , setCounter]= useState(0);
   const timer = useRef();
   const startResume = ()=>{
-    console.log(timer)
+    if(timer.current) return;
       timer.current = setInterval(()=>{
       setCounter((pre)=>{
         return pre + 1;
       })
-    },1000)
+    },100)
   }
   const stop = ()=>{
-    console.log("stop button is clicked")
+    clearInterval(timer.current)
+    timer.current = null;
+    // setCounter(0);
   }
   const reset = ()=>{
-    console.log("reset button is clicked")
+    clearInterval(timer.current);
+    setCounter(0);
+    timer.current = null;
   }
   return (
     <div className="stopwatch-container">
