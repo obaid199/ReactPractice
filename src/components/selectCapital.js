@@ -1,6 +1,6 @@
 import { useState } from "react";
 const SelectedCapital = ()=>{
-    const [selectCuntry,setSelectedCountry] = useState("")
+    const [selectCuntry,setSelectedCountry] = useState("");
     const [selectCapital, setSelectedCapital] = useState("");
     const countries = [
         {
