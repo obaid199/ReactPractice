@@ -12,9 +12,9 @@ function App() {
  return (
     <div className="App">
       {/* <DropDown/> */}
-      {/* <Stopwatch/> */}
+      <Stopwatch/>
       {/* <CountryDropdown/> */}
-      <SelectedCapital/>
+      {/* <SelectedCapital/> */}
     </div>
   );
 }
